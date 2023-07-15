@@ -1,7 +1,17 @@
 import React from 'react'
 
-export default function ProductRow() {
+export default function ProductRow({ product }: { product: any[] }) {
+  const name = product.stocked ? product.name :
+    <span className="text-red-500">
+      { product.name }
+    </span>
+
   return (
-    <div>ProductRow</div>
+    <>
+      <tr>
+        <td>{name}</td>
+        <td>{product.price}</td>
+      </tr>
+    </>
   )
 }
