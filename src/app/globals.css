@@ -24,4 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
 }
