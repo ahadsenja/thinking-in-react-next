@@ -1,9 +1,28 @@
 import React from 'react'
+import ProductCategoryRow from './ProductCategoryRow';
+import ProductRow from './ProductRow';
 
-export default function ProductTable() {
+export default function ProductTable({ products }: { products: any[] }) {
+  const rows: any[] = [];
+  let lastCategory: any = null;
+
+  products.forEach((product) => {
+    if (product.category !== lastCategory) {
+      rows.push(
+        <ProductCategoryRow category={product.category} key={product.category} />
+      );
+    }
+    
+    rows.push(
+      <ProductRow product={product} key={product.name} />
+    )
+
+    lastCategory = product.category;
+  })
+
   return (
     <>
-      <table className='table-auto'>
+      <table className='table w-full'>
         <thead>
           <tr>
             <th>Name</th>
@@ -11,14 +30,7 @@ export default function ProductTable() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-            <td>Malcolm Lockyer</td>
-          </tr>
-          <tr>
-            <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-            <td>Malcolm Lockyer</td>
-          </tr>
+          { rows }
         </tbody>
       </table>
     </>
