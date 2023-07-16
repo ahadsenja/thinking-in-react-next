@@ -11,8 +11,8 @@ const PRODUCTS = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-1/3 p-5 bg-[#0F172A] rounded">
-      <FilterableProductTable />
+    <main className="flex flex-col w-1/3 p-5 bg-[#0F172A] rounded justify-center items-stretch">
+      <FilterableProductTable products={PRODUCTS} />
     </main>
   )
 }
