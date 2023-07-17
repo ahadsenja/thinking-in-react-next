@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
+#### This project resource
+resource: https://react.dev/learn/thinking-in-react
+
+## Introduction
+I just follow the tutorial from the https://react.dev site, and i just make it a bit different in my code. 
+Actually, as long as i know, this project was focus on State, Props and how data flow works in react/next app.
+
+So, what i do in this project that can make it a bit different from the tutorial?
+  - I move every component into different files. 
+  - I placed the dummy data into another file.
+  - I create the interface file to store every interface for every component that have more then equal to 2 props,
+    so the component function will be more clean.
+  - I use this interface to set and store the type of props.
+
+Oke, I know you want to go to the code faster, so here are a few steps that you need to do
+if you want to follow this simple app tutorial.
 
 ## Getting Started
+  Just follow every steps carefully and slowly to get understand, what is actually happened in this simple app.
 
-First, run the development server:
+  ### Cloning project
+  1. First, clone this project via ssh: ```git clone git@github.com:ahadsenja/thinking-in-react-next.git```.
+  2. If you want to download this project, or use HTTPS or another way, just go to this project repository 
+    and choose from "code selectbox".
+  3. After finish to clone this project, just enter to the project directory.
+  4. Install the dependencies or requirement packages, you can choose one of this varous way:
+    4.1. ```npm install```
+    4.2  ```yarn install```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  ### Run the app
+  choose one of all the way below and run it in the development server:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  ```bash
+  npm run dev
+  # or
+  yarn dev
+  # or
+  pnpm dev
+  ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  *Notice: if you placed an attention at 'pnpm' package above, actually it doesn't matter, but if you are a beginner like me, 
+  i just recommend you to use the 'npm' or 'yarn' package.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  ### Show the app in browser
 
-## Learn More
+  - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - Don't forget to adjust to your 'port', if you don't use ':3000'.
 
-To learn more about Next.js, take a look at the following resources:
+## Resources
+
+To learn more about Next.js or React.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Learn React.js](https://react.dev) - to learn more about react.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+Made with love by: <strong>@ahadsenja<strong>
