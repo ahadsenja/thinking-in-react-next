@@ -1,12 +1,7 @@
 import React from 'react'
 import ProductCategoryRow from './ProductCategoryRow';
 import ProductRow from './ProductRow';
-
-interface ProductTableIface {
-  products: any[], 
-  filterText: string, 
-  inStockOnly: boolean
-}
+import { ProductTableIface } from '@/app/interfaces/ProductIfaces';
 
 export default function ProductTable({ products, filterText, inStockOnly }: ProductTableIface) {
   const rows: any[] = [];

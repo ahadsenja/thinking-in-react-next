@@ -1,11 +1,5 @@
 import React from 'react'
-
-interface SearchBarIface { 
-  filterText: string, 
-  inStockOnly: boolean,
-  onFilterTextOnChange: (e: any) => void,
-  onInStockOnlyOnChange: (e: any) => void
-}
+import { SearchBarIface } from '@/app/interfaces/ProductIfaces'
 
 export default function SearchBar({ filterText, inStockOnly, onFilterTextOnChange, onInStockOnlyOnChange }: SearchBarIface) {
   return (
