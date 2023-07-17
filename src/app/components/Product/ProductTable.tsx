@@ -2,11 +2,23 @@ import React from 'react'
 import ProductCategoryRow from './ProductCategoryRow';
 import ProductRow from './ProductRow';
 
-export default function ProductTable({ products }: { products: any[] }) {
+interface ProductTableIface {
+  products: any[], 
+  filterText: string, 
+  inStockOnly: boolean
+}
+
+export default function ProductTable({ products, filterText, inStockOnly }: ProductTableIface) {
   const rows: any[] = [];
   let lastCategory: any = null;
 
   products.forEach((product) => {
+    if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
+      return;
+    }
+    if (inStockOnly && !product.stocked) {
+      return
+    }
     if (product.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow category={product.category} key={product.category} />
