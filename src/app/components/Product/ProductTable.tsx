@@ -16,12 +16,18 @@ export default function ProductTable({ products, filterText, inStockOnly }: Prod
     }
     if (product.category !== lastCategory) {
       rows.push(
-        <ProductCategoryRow category={product.category} key={product.category} />
+        <ProductCategoryRow 
+          category={product.category} 
+          key={product.category} 
+        />
       );
     }
     
     rows.push(
-      <ProductRow product={product} key={product.name} />
+      <ProductRow 
+        product={product} 
+        key={product.name} 
+      />
     )
 
     lastCategory = product.category;

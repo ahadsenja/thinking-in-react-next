@@ -9,8 +9,17 @@ export default function FilterableProductTable({ products }: { products: any[] }
 
   return (
     <>
-      <SearchBar filterText={filterText} inStockOnly={inStockOnly} onFilterTextOnChange={setFilterText} onInStockOnlyOnChange={setInStockOnly} />
-      <ProductTable products={products} filterText={filterText} inStockOnly={inStockOnly} />
+      <SearchBar 
+        filterText={filterText} 
+        inStockOnly={inStockOnly} 
+        onFilterTextOnChange={setFilterText} 
+        onInStockOnlyOnChange={setInStockOnly} 
+      />
+      <ProductTable 
+        products={products} 
+        filterText={filterText} 
+        inStockOnly={inStockOnly} 
+      />
     </>
   )
 }
