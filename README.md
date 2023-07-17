@@ -1,12 +1,15 @@
+## Filterable Product App with Next.js
+
 <img src="./src/app/assets/filterable-app-with-next.png" />
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
-#### This project resource
-resource: https://react.dev/learn/thinking-in-react
+
+### Project resource: https://react.dev/learn/thinking-in-react
 
 ## Introduction
 I just follow the tutorial from the https://react.dev site, and i just make it a bit different in my code. 
-Actually, as long as i know, this project was focus on State, Props and how data flow works in react/next app.
+Actually, as long as i know, this project was focus on State, Props and how data flow works in react/next app,
+so you can filter the product data table based on the keywords that you type from search bar input and checkbox.
 
 So, what i do in this project that can make it a bit different from the tutorial?
   - I move every component into different files. 
@@ -61,4 +64,4 @@ To learn more about Next.js or React.js, take a look at the following resources:
 - [Learn React.js](https://react.dev) - to learn more about react.
 
 ## Contact
-Made with love by: <p style="font-weight: bold">@ahadsenja</p>
+Made with love by: @ahadsenja
