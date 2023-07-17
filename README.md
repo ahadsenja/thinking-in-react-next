@@ -19,33 +19,36 @@ if you want to follow this simple app tutorial.
 ## Getting Started
   Just follow every steps carefully and slowly to get understand, what is actually happened in this simple app.
 
-  ### Cloning project
-  1. First, clone this project via ssh: ```git clone git@github.com:ahadsenja/thinking-in-react-next.git```.
-  2. If you want to download this project, or use HTTPS or another way, just go to this project repository 
-    and choose from "code selectbox".
-  3. After finish to clone this project, just enter to the project directory.
-  4. Install the dependencies or requirement packages, you can choose one of this varous way:
-    4.1. ```npm install```
-    4.2  ```yarn install```
+### Cloning project
+1. First, clone this project via ssh: ```git clone git@github.com:ahadsenja/thinking-in-react-next.git```.
+2. If you want to download this project, or use HTTPS or another way, just go to this project repository 
+  and choose from "code selectbox".
+3. After finish to clone this project, just enter to the project directory.
+4. Install the dependencies or requirement packages, you can choose one of this varous way: <br>
+   ```bash
+   npm install 
+   # or 
+   yarn install
+   ```
 
-  ### Run the app
-  choose one of all the way below and run it in the development server:
+### Run the app
+choose one of all the way below and run it in the development server:
 
-  ```bash
-  npm run dev
-  # or
-  yarn dev
-  # or
-  pnpm dev
-  ```
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-  *Notice: if you placed an attention at 'pnpm' package above, actually it doesn't matter, but if you are a beginner like me, 
-  i just recommend you to use the 'npm' or 'yarn' package.
+<strong>*Notice:</strong> if you placed an attention at 'pnpm' package above, actually it doesn't matter, but if you are a beginner like me, 
+i just recommend you to use the 'npm' or 'yarn' package.
 
-  ### Show the app in browser
+### Show the app in browser
 
-  - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-  - Don't forget to adjust to your 'port', if you don't use ':3000'.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Don't forget to adjust to your 'port', if you don't use ':3000'.
 
 ## Resources
 
@@ -56,4 +59,4 @@ To learn more about Next.js or React.js, take a look at the following resources:
 - [Learn React.js](https://react.dev) - to learn more about react.
 
 ## Contact
-Made with love by: <strong>@ahadsenja<strong>
+Made with love by: <strong>@ahadsenja</strong>
