@@ -1,3 +1,5 @@
+<img src="./src/app/assets/filterable-app-with-next.png" />
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). 
 #### This project resource
 resource: https://react.dev/learn/thinking-in-react
@@ -59,4 +61,4 @@ To learn more about Next.js or React.js, take a look at the following resources:
 - [Learn React.js](https://react.dev) - to learn more about react.
 
 ## Contact
-Made with love by: <strong>@ahadsenja</strong>
+Made with love by: <p style="font-weight: bold">@ahadsenja</p>
